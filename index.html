@@ -1,81 +1,146 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Joe O'Brien Portfolio</title>
-
-<style>
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #121212;
-    color: white;
-    text-align: center;
-}
-
-.container {
-    max-width: 700px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #b30000;
-    margin-bottom: 25px;
-}
-
-h3 {
-    border-bottom: 2px solid #b30000;
-    display: inline-block;
-    padding-bottom: 6px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: #1f1f1f;
-    padding: 15px;
-    margin: 10px auto;
-    border-left: 5px solid #b30000;
-    max-width: 400px;
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe O'Brien | CS 499 ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-    
-        <h1>Joe O'Brien</h1>
-        
-        <h2>Computer Science ePortfolio</h2>
-        
-        <p>Welcome to my professional portfolio created for the SNHU Computer Science Capstone.</p>
-        
-        <h3>Projects</h3>
-        
-        <ul>
-            <li>CS465 Full Stack Application</li>
-        </ul>
-    
+<header>
+  <h1>CS 499 ePortfolio</h1>
+  <p>Joe O'Brien | Computer Science Capstone</p>
+</header>
+
+<nav>
+  <a href="#self">Self Assessment</a>
+  <a href="#review">Code Review</a>
+  <a href="#artifact">Artifact</a>
+  <a href="#enhancements">Enhancements</a>
+  <a href="#files">Files</a>
+</nav>
+
+<div class="container">
+
+  <div class="section" id="self">
+    <h2>Professional Self Assessment</h2>
+
+    <p>
+      This program helped me go from just being interested in tech to actually understanding how software works end to end. Not just writing code, but thinking about structure, usability, and how everything connects.
+    </p>
+
+    <p>
+      One big thing for me was explaining code clearly. It's just as important as writing it. The code review in this project really pushed that. I had to walk through my app, point out issues, and explain why changes mattered.
+    </p>
+
+    <p>
+      I also got more comfortable with problem solving. Adding filtering and sorting to my app seems small, but it made a big difference in how usable it is. It made me think more about how data should actually be handled, not just stored.
+    </p>
+
+    <p>
+      Working with full stack apps and databases tied everything together. Frontend, backend, and data all depend on each other. This project helped that click more for me.
+    </p>
+
+    <p>
+      Security was another big shift. I started thinking more about bad input, protecting routes, and making sure data is handled safely. Not just building features, but building them the right way.
+    </p>
+
+    <p>
+      Overall, this portfolio shows how I improved one project across multiple areas. It reflects how I think now compared to when I started, and gives a solid example of the kind of work I can do going forward.
+    </p>
+
+  </div>
+
+  <div class="section" id="review">
+    <h2>Code Review</h2>
+
+    <p>
+      The code review is where this project started. I walked through my original app and explained how everything worked before making any changes.
+    </p>
+
+    <p>
+      From there, I pointed out areas to improve. Things like usability, data handling, and security. That gave me a clear plan for what to enhance.
+    </p>
+
+    <p>
+      It was useful because it made me think more critically about my own code instead of just adding features.
+    </p>
+
+    <div class="links">
+      <a href="https://youtu.be/CWUw5c4_5Pg">Code Review Video</a>
     </div>
 
-</body>
+  </div>
 
+  <div class="section" id="artifact">
+    <h2>Original Artifact</h2>
+
+    <p>
+      The project I used is the Travlr Getaways full stack app from CS 465. It has both a customer site and an admin side for managing trips.
+    </p>
+
+    <p>
+      I picked it because it already had a solid base and gave me room to improve it instead of starting over.
+    </p>
+
+    <p>
+      It let me show frontend work, backend logic, database use, and security improvements all in one place.
+    </p>
+
+    <div class="links">
+      <a href="https://github.com/jobrien-snhu/CS465-fullstack-original" target="_blank">Original Repository</a>
+      <a href="https://github.com/jobrien-snhu/CS465-fullstack" target="_blank">Enhanced Repository</a>
+    </div>
+
+  </div>
+
+  <div class="section" id="enhancements">
+    <h2>Enhancements</h2>
+
+    <p>
+      <strong>Software Engineering:</strong> I cleaned up parts of the admin side and made it easier to use. Nothing crazy, just making it more practical and organized.
+    </p>
+
+    <p>
+      <strong>Algorithms and Data Structures:</strong> I added filtering and sorting so the data is easier to work with. Small change but big improvement in usability.
+    </p>
+
+    <p>
+      <strong>Databases:</strong> I improved CRUD behavior and added validation so bad data does not make it into the database. This made the app more reliable.
+    </p>
+
+    <p>
+      Together these changes made the project feel more complete and closer to something you would actually use.
+    </p>
+
+  </div>
+
+  <div class="section" id="files">
+    <h2>Supporting Files</h2>
+
+    <p>
+      These links will point to my final documents once everything is uploaded.
+    </p>
+
+    <div class="links">
+      <a href="#">Software Engineering Narrative</a>
+      <a href="#">Algorithms and Data Structures Narrative</a>
+      <a href="#">Database Narrative</a>
+    </div>
+
+  </div>
+
+</div>
+
+<button id="topBtn" onclick="scrollToTop()">Top ↑</button>
+
+<footer>
+  <p>Joe O'Brien | CS 499 Capstone</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
 </html>
